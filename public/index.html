@@ -1,0 +1,66 @@
+<DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Pacifico&effect=shadow-multiple|3d-float">
+
+    <title>Scrapper</title>
+    <style>
+      body { background-color:slategrey; }
+      h1 {color:whitesmoke;
+        font-family: 'pacifico', cursive;}
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+        background-color:lightslategrey;
+      }
+      #notes {
+        float: right;
+        width: 30%;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color:darkcyan;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="wrapper">
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <a class="navbar-brand" href="#"></a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <button id="scrape-it" type="button" class="btn btn-info" >
+                  <img src="/images/icons8-track_and_field.png"></button>
+                </li>
+      <h1>Mongoose Scrapper</h1>
+
+     
+
+      <div id="articles"></div>
+      <div id="notes"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
